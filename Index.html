@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stalin's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .hero {
+      height: 100vh;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+    .fadeIn {
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-up">
+    <div>
+      <h1 class="text-4xl font-bold">Hello, I'm Stalin Gunasekaran</h1>
+      <p class="mt-2 text-xl">A passionate IT professional with skills in Web Development</p>
+      <p class="mt-4">B.E. in Computer Science | React, JavaScript, MongoDB</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="py-12 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold" data-aos="fade-up">My Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
+        <div class="card" data-aos="zoom-in">
+          <img src="your-image-path.jpg" alt="Project" class="w-full rounded-md shadow-md">
+          <h3 class="mt-4 font-semibold text-lg">Social Media App</h3>
+          <p class="mt-2">Built with React, MongoDB, Tailwind CSS</p>
+          <a href="your-project-link" class="text-blue-500">View Project</a>
+        </div>
+        <!-- Add more projects here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold" data-aos="fade-up">Contact Me</h2>
+      <p class="mt-4">Feel free to reach out to me at</p>
+      <p class="mt-2 text-xl font-bold">your.email@example.com</p>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
